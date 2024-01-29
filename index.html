@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asiment 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Thư viện icon-->
+
+    <!-- Thư viện booostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" media="screen and (max-width: 576px)" href="css/mobile.css">
+<link rel="stylesheet" href="css/tablet.css">
+
+<body>
+    <nav class="navbar bg-body-tertiary " style="background-color:   #2B4B82;">
+        <div class="container ">
+            <a class="navbar-brand"><a href="#">Thông tin <i class="fa-solid fa-user"></i></a>
+                <a class="navbar-brand"><a href="#">Lý lịch <i class="fa-solid fa-book"></i></a>
+                    <a class="navbar-brand"><a href="#"></i>Chứng chỉ <i class="fa-solid fa-award"></i> </a>
+                        <a class="navbar-brand"> <a href="#"></i>Dự án <i class="fa-solid fa-star"></i></a>
+
+        </div>
+    </nav>
+    <div class="img-container">
+        <img src="Image/digital.png" width="100%" height="400px">
+        <div class="img-h">
+            <h3>PHẠM NGỌC THÀNH</h3>
+            <P>FullStack Developer</P>
+        </div>
+    </div>
+    <main>
+        <div class="container-fluid">
+            <section class="row">
+                <!-- col-sm-6: kích thước màn hình <= 576px(sm-6) thì 1 cột sẽ chiếm 6 
+            khi đạt kích thước >676 thì 1 cột sẽ chiếm 12 ô-->
+                <div id="target" class="col-12 col-sm-12 col-lg-6">
+                    <div class="section-title">
+                        <h3>Mục tiêu nghề nghiệp</h3>
+                    </div>
+                    <div class="section-content">
+                        <p>Là một sinh viên đã hoàng thành chương trình chứng chỉ Doanh Nghiệp của <b>FUNIX</b>. Em mong
+                            muốn mình sẽ
+                            được làm việc vị trí Fullstack Developer, có thể vận dụng những kiến thức đã được trau dồi
+                            và
+                            không ngừng học hỏi
+                            đẻ phát triển bản thân, cũng như hoàn thành tốt công việc được giao</p>
+                    </div>
+                </div>
+                <div id="info" class="col-12 col-sm-12 col-lg-6">
+                    <div class=" section-title">
+                        <h3>Thông tin cá nhân</h3>
+                    </div>
+                    <div class="section-content">
+                        <p><b>Ngày Sinh</b>: 14/07/03</p>
+                        <p><b>Giới Tính</b>: Nam</p>
+                        <p><b>Điện Thoại</b>: (84)777458***</p>
+                        <p><b>Email</b>: thanhpnFX21990@funix.edu.vn</p>
+                        <p><b>Địa Chỉ</b>: Đà Nẵng</p>
+                        <p><b>Website</b>: http://thanhpn.tech</p>
+                        <div class="section-icon" style="margin-top: 15px; color: blueviolet; font-size: 30px;">
+                            <a href="#" class="p-2"><i class=" fa-brands fa-facebook"></i></a>
+                            <a href="#" class="p-2"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="p-2"><i class="fa-brands fa-golang"></i></i></a>
+                            <a href="#" class="p-2"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="submit-email">
+                        <input type="email" id="email">
+                        <p id="error-email"></p>
+                        <button onclick="handsubmit()" type="button" class="btn btn-primary"> Submit </button>
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <section class="section-gap col-12 col-sm-6 col-lg-12">
+                    <!-- onmouseover="handleonMouseOver(this): this xác định bản thân hàm dc gọi bên js -->
+                    <div class="row">
+                        <div id="experience" onmouseover="handleonMouseOver(this)" onmouseout="handleOnMouseOut(this)"
+                            class="parent col-lg-4 col-12">
+                            <div class="section-title">Kinh Nghiệm <i class="fa-solid fa-toolbox"
+                                    style="font-size:30px;"></i></div>
+                            <div class="timeline ">
+                                <div class="section-content">
+                                    <div class="title"><i class="fa-brands fa-fly fa-2xl"></i>Full Stack Developer -Công
+                                        ty
+                                        Y
+                                    </div>
+                                    <div class="sub-title">05/2022 - <span class="btn-primary">Hiện tại</span>
+                                    </div>
+                                    <div class="content">
+                                        <p>-Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có.</p>
+                                        <p>-Phân tích thiết kế Database, sử dụng các hệ quản trị CSDL(MYSQL,
+                                            SQLServer,NóQL,...)
+                                            và viết được các câu truy vấn.</p>
+                                        <p>-Sử dụng ngôn ngữ server-side(Python,Java...)để xây dựng các Web Service</p>
+                                    </div>
+                                </div>
+                                <div class="section-content">
+                                    <div class="title"> <i class="fa-brands fa-fly fa-2xl"></i>Web Designer-/Công ty X
+                                    </div>
+                                    <div class="sub-title">05/2022 - 08/2022
+                                    </div>
+                                    <div class="content">
+                                        -Thiết kế Website dựa trên yêu cầu của khách hàng.</p>
+                                        <p>Sử dụng các công cụ Figma, CanVa,PTS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-warning view-more control-view"
+                                    onclick="handleViewMore(this)">
+                                    View more</button>
+                            </div>
+                        </div>
+                        <div id="skills" onmouseover="handleonMouseOver(this)" onmouseout="handleOnMouseOut(this)"
+                            class="parent col-lg-4 col-12">
+                            <div class="section-title">
+                                KỸ NĂNG <i class="fa-solid fa-screwdriver-wrench" style="font-size:30px;"></i></h2>
+                            </div>
+                            <div class="section-content">
+                                <div class="title">HTML/CSSS:Fundamental</div>
+                                <div class="exp-bar fill"></div>
+                                <div class="exp-bar fill"></div>
+                                <div class="exp-bar"></div>
+                            </div>
+                            <div class="section-content">
+                                <div class="title">NodeJS:Intermadiate</div>
+                                <div class="exp-bar fill"></div>
+                                <div class="exp-bar"></div>
+                                <div class="exp-bar"></div>
+                            </div>
+                            <div class="section-content">
+                                <div class="title">Javascript:Intemediate</div>
+                                <div class="exp-bar fill"></div>
+                                <div class="exp-bar fill"></div>
+                                <div class="exp-bar"></div>
+                            </div>
+                            <div class="section-content">
+                                <div class="title">Boostrap 5: Fundametal</div>
+                                <div class="exp-bar fill"></div>
+                                <div class="exp-bar"></div>
+                                <div class="exp-bar"></div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-warning view-more control-view"
+                                    onclick="handleViewMore(this)">
+                                    View
+                                    more</button>
+                            </div>
+                        </div>
+                        <div id="language" onmouseover="handleonMouseOver(this)" onmouseout="handleOnMouseOut(this)"
+                            class="parent col-lg-4 col-12">
+                            <div class="section-title">
+                                NGÔN NGỮ <i class="fa-solid fa-microphone" style="font-size:30px;"></i>
+                            </div>
+                            <div class="section-content">
+                                <div class="title">Tiếng Anh- IELTS 7.0</div>
+                                <i class="exp-bar fill"></i>
+                                <div class="exp-bar"></div>
+                                <div class="exp-bar"></div>
+                            </div>
+                            <div class="section-content">
+                                <div class="title">Tiếng Nhật lJLPT N4</div>
+                                <div class="exp-bar fill"></div>
+                                <div class="exp-bar"></div>
+                                <div class="exp-bar"></div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-warning view-more control-view"
+                                    onclick="handleViewMore(this)">
+                                    View
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-gap col-12 col-sm-6 col-lg-12">
+                    <!-- onmouseover="handleonMouseOver(this): this xác định bản thân hàm dc gọi bên js -->
+                    <div class="row">
+                        <div id="education" onmouseover="handleonMouseOver(this)" onmouseout="handleOnMouseOut(this)"
+                            class="parent col-lg-4 col-12">
+                            <div class="section-title">HỌC VẤN <i class="fa-solid fa-pencil"
+                                    style="font-size:30px;"></i>
+                            </div>
+                            <div class="timeline">
+                                <div class="section-content">
+                                    <div class="title"><i class="fa-brands fa-fly fa-2xl"></i>FUNIX</div>
+                                    <div class="sub-title">06/2021 - 05/2022</span>
+                                    </div>
+                                </div>
+                                <div class="section-content">
+                                    <div class="title"><i class="fa-brands fa-fly fa-2xl"></i>Cử nhân-DH FPT</div>
+                                    <div class="sub-title">06/2016-07/2019</span>
+                                    </div>
+                                    <div class="content">
+                                        <p>-Chuyên nghành kỹ thuật phần mềm</p>
+                                        <p>-GPA:3.2/4</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-warning view-more control-view"
+                                    onclick="handleViewMore(this)">
+                                    View
+                                    more</button>
+                            </div>
+                        </div>
+                        <div id="activity" onmouseover="handleonMouseOver(this) " onmouseout="handleOnMouseOut(this)"
+                            class="parent col-lg-4 col-12">
+                            <div class="section-title">HOẠT ĐỘNG<i class="fa-solid fa-briefcase"
+                                    style="font-size:30px;"></i></div>
+                            <div class="timeline">
+                                <div class="section-content">
+                                    <div class="title"><i class="fa-brands fa-fly fa-2xl"></i>FPT Edu Hackathon 2019
+                                    </div>
+                                    <div class="sub-title"> 03/2019 - 05/2019</div>
+                                    <div class="content">
+                                        <p>-Giải 3 bảng A</p>
+                                        <p>Đề tài: Trang web về phân loại rác thải.</p>
+                                    </div>
+                                </div>
+                                <div class="section-content">
+                                    <div class="title"><i class="fa-brands fa-fly fa-2xl"></i>Câu lạc bộ Z</div>
+                                    <div class="sub-title"> 04/2020 - 05/2020</div>
+                                    <div class="content">
+                                        <p>08/2016-08/2017</p>
+                                        <p>-Trưởng ban chuyên môn</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-warning view-more control-view"
+                                    onclick="handleViewMore(this)">
+                                    View
+                                    more</button>
+                            </div>
+                        </div>
+                        <div id="like" onmouseover="handleonMouseOver(this)" onmouseout="handleOnMouseOut(this)"
+                            class="parent col-lg-4 col-12">
+                            <div class="section-title">SỞ THÍCH<i class="fa-regular fa-heart"
+                                    style="font-size:30px;"></i>
+                            </div>
+                            <div class="section-content">
+                                <div class="like-icon">
+                                    <div class="icon ps-3 ">
+                                        <i class="fa-solid fa-bullhorn"></i>
+                                        <p>Âm nhạc</p>
+                                    </div>
+                                    <div class="icon ps-3">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        <p>Chơi game</p>
+                                    </div>
+                                    <div class="icon ps-3">
+                                        <i class="fa-solid fa-plane "></i>
+                                        <p>Du lịch</p>
+                                    </div>
+                                    <div class="icon ps-3">
+                                        <i class="fa-solid fa-music "></i>
+                                        <p>Âm nhạc</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-warning view-more control-view"
+                                    onclick="handleViewMore(this)">
+                                    View
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section>
+                <div id="certificate">
+                    <div class="section-title">CHỨNG CHỈ - GIẢI THƯỞNG</div>
+                    <div class="row ">
+                        <div class="card col-4 p-2 ms-5" style="width: 25rem;">
+                            <img src="Image/chung_chi_mos.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p>Chứng chỉ Powerpoint</p>
+                                <b>Chứng chỉ quốc tế do Microsoft cấp </b>
+                            </div>
+                        </div>
+                        <div class="card col-4 p-2  ms-5" style="width: 25rem;">
+                            <img src="Image/ccjs.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p> <b></b>Chứng chỉ Javascrpit</p>
+                                <b>-Chứng chỉ thuộc chương trình CCDN </b>
+                            </div>
+                        </div>
+                        <div class="card col-4 p-2  ms-5" style="width: 25rem;">
+                            <img src="Image/Chung-chi-Certified-Data-Professional-1024x791.webp" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <p><b>CHỨNG CHỈ CDPSE</b></p>
+                                <b>-Chứng chỉ dựa trên kinh nghiệm để đánh giá khả năng làm việc </b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="pb-3">
+                <div class="section-title ">Dự Án</div>
+                <div class="row">
+                    <div class="card col-4 p-2 ms-5" style="width: 25rem;">
+                        <div class="card-img"> <img src="Image/aaa.png" alt="chung-chi" width="150"></div>
+                        <div class="project-pets"></div>
+                        <div class="title">
+                            <a href="cv.html" target="_blank">
+                                <h3 class="border-top">CV-Cá Nhân</h3>
+                            </a>
+                        </div>
+                        <div class="sub-title">
+                            <i class="btn-primary">2021</i> <i class="fa-solid fa-user">
+                            </i>FUNIX
+                            <i class="fa-solid fa-bong"></i>Developer
+                        </div>
+                        <div class="content">
+                            <div class="border-top">
+                                <p>Mô tả </p>
+                                <p>Trang Web CV cá nhân online.Gồm các thông tin cá nhân cũng như kỹ năng nghề
+                                    nghiệp.
+                                </p>
+                            </div>
+                            <div class="border-top">
+                                <p>Nhiệm vụ</p>
+                                <p>-Phát triển code-Rewview code-Tối Ưu code- Xử lý lỗi</p>
+                            </div>
+                            <div class="border-top">
+                                <p>Công nghệ</p>
+                                <p>-HTML/CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4  p-2 ms-5" style="width: 25rem;">
+                        <div class="card-img"> <img src="Image/websach" alt="chung-chi" width="150"></div>
+                        <div class="title">
+                            <a href="bookstore.html" target="_blank">
+                                <h3 class="border-top">Web bán sách</h3>
+                            </a>
+                        </div>
+                        <div class="sub-title">
+                            <i class="btn-primary">2021</i><i class="fa-solid fa-user"></i>FUNIX
+                            <i class="fa-solid fa-bong"></i>Developer
+                        </div>
+                        <div class="content">
+                            <div class="border-top">
+                                <p>Mô tả </p>
+                                <p>Trang Web mua bán sách phù hợp với mọi lứa tuổi.</p>
+                            </div>
+                            <div class="border-top">
+                                <p>Nhiệm vụ</p>
+                                <p>-Phát triển code-Rewview code-Tối Ưu code- Xử lý lỗi</p>
+                            </div>
+                            <div class="border-top">
+                                <p>Công nghệ</p>
+                                <p>-HTML,CSS,SQL server,Java</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4 p-2 ms-5" style="width: 25rem;">
+                        <div class="card-img"> <img src="Image/webbanhang" alt="chung-chi" width="150"></div>
+                        <div class="title">
+                            <a href="food.html" target="_blank">
+                                <h3 class="border-top">Web quản lý nhà hàng</h3>
+                            </a>
+                        </div>
+                        <div class="sub-title">
+                            <i class="btn-primary">2021 </i><i class="fa-solid fa-user"></i>FUNIX
+                            <i class="fa-solid fa-bong"></i>Developer
+                        </div>
+                        <div class="content">
+                            <div class="border-top">
+                                Funix <p>Mô tả </p>
+                                <p>Ứng dụng giúp quản lý nhà lý nhà hàng(Nhân viên, quản lý....)</p>
+                            </div>
+                            <div class="border-top">
+                                <p>Nhiệm vụ</p>
+                                <p>-Phát triển code-Rewview code-Tối Ưu code- Xử lý lỗi</p>
+                            </div>
+                            <div class="border-top">
+                                <p>Công nghệ</p>
+                                <p>-HTML,CSS,Javascript,Java,SQL server</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="d-flex justify-content-center">
+                <a href="#" class="m-3"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                <a href="#" class="m-3"><i class="fa-brands fa-twitter"></i>Linkedin</a>
+                <a href="#" class="m-3"><i class="fa-brands fa-github"></i>Github</a>
+            </div>
+        </div>
+    </main>
+    <script src="js/scrpit.js"></script>
+    <script src="js/digital.js"></script>
+</body>
+
+</html>

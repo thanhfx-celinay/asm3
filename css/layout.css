@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* tái sử dụng màu :root */
+:root{
+   --color-primary:rgb(5, 113, 255);
+}
+
+a{
+   text-decoration: none;/*xóa bỏ gạch chân trong thẻ a*/
+   color:  #94DDDE;
+}
+
+section{
+   display: flex;
+   margin-bottom: 20px;
+}
+section > *{
+   flex: 1;
+}
+section > *div{
+   padding: 20px;
+   flex: 1;
+}
+.section-gap{
+   gap: 30px;
+}
+
+.img-container{
+   position: relative;
+}
+.img-h{
+    color: rgb(233, 206, 206);
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#target{
+   background-color: rgba(198, 215, 231, 0.675);
+   padding: 20px;
+}
+#info{
+   background-color: rgba(198, 215, 231, 0.362);
+   padding: 20px;
+}
+
+/*ẩn thông tin cá nhân  đến khi submit email*/
+#info .section-content{
+   display: none;
+}
+/*css error email*/
+#error-email{
+   color: red;
+   font-weight: 700;
+}
+
+.btn-primary{
+   background-color: var(--color-primary);
+   border-radius: 2px;
+}
+/* exp-bar*/
+.exp-bar{
+   width: 50px;
+   height: 5px;
+   background-color:grey;
+   display: inline-block;
+   border-radius: 2px;
+}
+.fill{
+   background-color: var(--color-primary);
+}
+.section-title{
+   padding: 5px;
+   font-size: 1.3em;
+   font-weight: bold;
+   display: flex;
+   justify-content: space-between;
+}
+.section-content{
+   padding: 10px;
+}
+.icon > i{
+   text-align: center;
+   padding: 7px;
+   height: 50px;
+   width: 50px;
+   border: 2px solid aqua;
+   border-radius: 50px;
+   font-size: 30px;
+}
+.section-title .title{
+   font-weight: bold;
+
+}
+
+/* timeline */
+.timeline .section-content{
+   position: relative;
+   padding-left: 15px;
+}
+
+.timeline .title ::before{
+   position: absolute;
+   content: "\2022";
+   font-size: 1.5em;
+   color: var(--color-primary);
+   top: 16px;
+   left: -3px;
+}
+#info,#target,#experience,#skills,#language,#education,#activity,#like,#certificate{
+   padding: 20px;
+   border: 2px solid gray;
+}
+/*none view-more*/
+
+
+/* display none content*/
+.view-more {
+   display: none;
+}
+
+#experience .section-content,
+#skills .section-content,
+#language .section-content,
+#education .section-content,
+#activity .section-content,
+#like .section-content,
+#certificate .section-content{
+  display: none;
+}
+
+#certificate .section-content{
+   display: grid;
+   grid-template-columns: repeat(2, 0.5fr);
+   grid-gap: 20px;
+
+}
+
+.like-icon {
+   display: flex;
+   text-align: center;
+
+}
+.card{
+   display: flex;
+   gap: 20px;
+   font-size: 14px;
+
+}
+.card img{
+   flex: 0.3;
+   object-fit: contain;
+}
+.card .inline-block{
+   flex: 0.7;
+
+}
+.card h4{
+   font-weight: 500;
+
+}
+img{
+   width: 100%;
+}
+
+#project{
+   padding: 20px;
+}
+
+#project .section-content{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 20px;
+}
+#project .card{
+   /* //chỉnh lại bố cục thành hàng dọc */
+   flex-direction: column;
+}
+.sub-title{
+   display: flex;
+   gap: 10px;
+}
+.card .content >div{
+   display: flex;
+   gap: 5px;
+}
+.card .content >div p:first-child{
+   flex: 0.25;
+}
+.card .content >div p:last-child{
+   flex: 0.75;
+}
+
+#project .content{
+   font-size: 14px;
+   padding-top: 10px;
+}
+#project .content >div{
+   font-size: 14px;
+   padding-top: 10px;
+}
+.footer{
+   background-color:  #2B4B82;
+   color: #94DDDE;
+   font-size: 20px;
+   text-align: center;
+   text-decoration: none;/*xóa bỏ gạch chân trong link*/
+  
+}
+
+.footer a{
+   color:  #94DDDE;
+}
+
